@@ -7,11 +7,11 @@
  */
 
 public class MakingChange {
-    /**
-     * TODO: Complete this function, countWays(), to return the number of ways to make change
-     *  for any given total with any given set of coins.
-     */
+
     public static long countWays(int target, int[] coins) {
+        // Array representing the # of ways for the index amount of coins
+        int[] ways = new int[coins.length + 1];
         return 0;
     }
+
 }
