@@ -16,15 +16,15 @@ public class MakingChange {
         for(int i = 0; i <= target; i++) {
             ways[i] = -1;
         }
-        return waysPerCoin(target, coins);
+        return waysPerCoin(target, coins, 0);
     }
 
-    public static int waysPerCoin(int target, int[] coins) {
+    public static int waysPerCoin(int target, int[] coins, int index) {
         if(target == 0) {
             return 1;
         }
 
-        if(target < 0) {
+        if(target < 0 || index >= coins.length) {
             return 0;
         }
 
@@ -34,9 +34,10 @@ public class MakingChange {
 
         int total = 0;
 
-        for(int coin: coins) {
-            total += waysPerCoin(target - coin, coins);
-        }
+
+        total += waysPerCoin(target - coins[index], coins, index);
+        total += waysPerCoin(target, coins, index + 1);
+
 
         ways[target] = total;
         return total;
