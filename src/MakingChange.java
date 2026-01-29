@@ -8,40 +8,39 @@
 
 public class MakingChange {
 
-    public static int[] ways;
+    public static long[][] ways;
 
     public static long countWays(int target, int[] coins) {
-        // Array representing the # of ways for the index amount of coins
-        ways = new int[target + 1];
-        for(int i = 0; i <= target; i++) {
-            ways[i] = -1;
+        ways = new long[target + 1][coins.length];
+        // Fill first col with 1s bc always 1 way to make 0
+        for(int i = 0; i < coins.length; i++) {
+            ways[0][i] = 1;
         }
-        return waysPerCoin(target, coins, 0);
+
+        // Recursive call for Memoization
+        count(target, coins.length - 1, coins);
+        return ways[target][coins.length - 1];
     }
 
-    public static int waysPerCoin(int target, int[] coins, int index) {
-        if(target == 0) {
+    // Memoization
+    public static long count(int sum, int index, int[] coins) {
+        // If sum is perfect cut down it is a solution
+        if(sum == 0) {
             return 1;
         }
-
-        if(target < 0 || index >= coins.length) {
+        // Ensure within bounds
+        if(index < 0 || sum < 0) {
             return 0;
         }
-
-        if(ways[target] != -1) {
-            return ways[target];
+        // Use memoization if possible
+        if(ways[sum][index] != 0) {
+            return ways[sum][index];
         }
 
-        int total = 0;
+        // Update memoization
+        ways[sum][index] = count(sum - coins[index], index, coins) + count(sum, index - 1, coins);
 
-
-        total += waysPerCoin(target - coins[index], coins, index);
-        total += waysPerCoin(target, coins, index + 1);
-
-
-        ways[target] = total;
-        return total;
-
+        return ways[sum][index];
 
 
     }
