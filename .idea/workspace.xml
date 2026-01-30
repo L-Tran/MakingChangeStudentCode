@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Finished memoization">
+    <list default="true" id="bf08351e-8001-407c-880c-49b47a0a4156" name="Changes" comment="Testing new things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MakingChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakingChange.java" afterDir="false" />
     </list>
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -54,7 +59,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "experimental",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -70,6 +75,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MakingChangeTest" />
+        <item itemvalue="JUnit.MakingChangeTest" />
         <item itemvalue="JUnit.MakingChangeTest" />
       </list>
     </recent_temporary>
@@ -115,14 +122,43 @@
       <option name="project" value="LOCAL" />
       <updated>1769657370534</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished tabulation">
+      <option name="closed" value="true" />
+      <created>1769807480691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769807480691</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Testing new things">
+      <option name="closed" value="true" />
+      <created>1769807517583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769807517583</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Work log 1 + 2" />
     <MESSAGE value="Attempted memoization" />
     <MESSAGE value="Finished memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished memoization" />
+    <MESSAGE value="Finished tabulation" />
+    <MESSAGE value="Testing new things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing new things" />
   </component>
 </project>
